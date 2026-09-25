@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *, [data-theme="dark"], [data-theme="dark"] *));
+
+@layer base {
+  :root {
+    --brand-primary: #0E7A5D;
+    --brand-primary-dark: #095943;
+    --brand-primary-light: #EBF7F3;
+    --brand-accent: #E5A824;
+  }
+
+  body {
+    font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  [dir="ltr"] body {
+    font-family: 'Plus Jakarta Sans', 'Tajawal', sans-serif;
+  }
+}
+
+/* Custom modern scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(14, 122, 93, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(14, 122, 93, 0.45);
+}
+
+/* Subtle badge pulse */
+@keyframes subtle-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-subtle-bounce {
+  animation: subtle-bounce 3s ease-in-out infinite;
+}
