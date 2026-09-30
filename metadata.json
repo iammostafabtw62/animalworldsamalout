@@ -1,0 +1,6 @@
+{
+  "name": "Animal World | عالم الحيوان - Samalout, Minya",
+  "description": "Official website, pet store, and veterinary clinic platform for Animal World (عالم الحيوان) in Samalout, Minya, Egypt.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
